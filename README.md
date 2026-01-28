@@ -1,125 +1,67 @@
-# HTML Projects Collection
+# Portfolio Website
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-A curated collection of HTML programs and web development projects showcasing various techniques, layouts, and interactive elements.
+---
 
-## 📋 Table of Contents
+## 👋 Welcome!
 
-- [About](#about)
-- [Features](#features)
-- [Projects](#projects)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+This repository contains my personal portfolio website, built with HTML, CSS, and JavaScript. Here you can learn more about me, my skills, and see some of my featured projects.
 
-## 🌟 About
+## 🧑‍💻 About Me
 
-This repository contains a variety of HTML-based projects that demonstrate different aspects of web development. From simple static pages to interactive web applications, these projects serve as learning resources and examples for HTML, CSS, and JavaScript implementations.
+Hi! I'm Austin Ledin, a passionate web developer and designer. I love creating beautiful, responsive websites and experimenting with new technologies. My portfolio showcases my work, skills, and interests in web development.
 
-## ✨ Features
+## 🚀 Skills
 
-- **Diverse Projects**: Collection of various HTML programs covering different topics
-- **Clean Code**: Well-structured and commented HTML code
-- **Responsive Design**: Many projects include responsive layouts
-- **Educational Value**: Great for learning web development concepts
-- **Open Source**: Free to use and modify
+- HTML5, CSS3, JavaScript
+- Responsive Web Design
+- UI/UX Principles
+- Version Control (Git)
 
-## 📁 Projects
+## 🌟 Featured Projects
 
-### Current Projects
+- **Portfolio Website**: The main site, built to showcase my work and experience
+- **Other Projects**: [Add links or descriptions to other projects you want to highlight]
 
-- **index.html**: Main landing page showcasing the collection
+## 🌐 How to Publish on GitHub Pages
 
-*More projects coming soon!*
+Follow these steps to publish your portfolio website and get a live link:
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Basic knowledge of HTML/CSS/JavaScript (optional for viewing)
-
-### Installation
-
-1. **Clone the repository**
+1. **Fork or clone this repository to your GitHub account**
    ```bash
    git clone https://github.com/your-username/HTML.git
    ```
-
-2. **Navigate to the project directory**
+2. **Push your changes to GitHub**
    ```bash
-   cd HTML
+   git add .
+   git commit -m "Update portfolio website"
+   git push origin main
    ```
+3. **Go to your repository on GitHub**
+4. **Click on 'Settings'** (top right)
+5. Scroll down to the **"Pages"** section in the sidebar
+6. Under **"Source"**, select the branch (usually `main`) and `/root` folder
+7. Click **"Save"**
+8. After a few moments, your site will be published at:
+   - `https://your-username.github.io/HTML/`
 
-3. **Open in browser**
-   - Double-click any `.html` file to open in your default browser
-   - Or use a local server for better development experience
+## ✨ Customization
 
-### Local Development Server
+Feel free to use this template for your own portfolio! Update the content, add your own projects, and personalize the design to reflect your style.
 
-For a better development experience, you can use a local server:
+## 📫 Contact
 
-```bash
-# Using Python (if installed)
-python -m http.server 8000
-
-# Using Node.js (if installed)
-npx serve .
-
-# Then open http://localhost:8000 in your browser
-```
-
-## 📖 Usage
-
-1. Browse through the different HTML files in the repository
-2. Open any `.html` file in your web browser to view the project
-3. Examine the source code to understand the implementation
-4. Modify and experiment with the code as needed
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add some amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
-
-### Guidelines
-
-- Follow HTML5 standards
-- Use semantic HTML elements
-- Ensure code is well-commented
-- Test across different browsers
-- Keep file names descriptive
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin)
+- **GitHub**: [your-username](https://github.com/your-username)
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-**Your Name** - [your-email@example.com](mailto:your-email@example.com)
-
-Project Link: [https://github.com/your-username/HTML](https://github.com/your-username/HTML)
-
 ---
 
-⭐ **Star this repo if you find it helpful!**
-
-*Made with ❤️ and lots of ☕*
+*Thank you for visiting my portfolio!*
