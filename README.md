@@ -38,12 +38,12 @@ Hi! I'm Austin Ledin, a passionate web developer and designer. I love creating b
 
 ## 🔗 View My Portfolio
 
-Visit my live portfolio here: **[Your Portfolio Link](Not finished yet)**
+Visit my live portfolio here: **https://austinl28.github.io/HTML/**
 
 ## 📫 Contact
 
-- **Email**: [your-email@example.com](mailto:austinledin28@icloud.com)
-- **GitHub**: [your-username](https://github.com/AustinL28)
+- **Email**: [austinledin28@icloud.com](mailto:austinledin28@icloud.com)
+- **GitHub**: [AustinL2](https://github.com/AustinL28)
 
 ---
 
