@@ -1,15 +1,15 @@
-// Gets elements
+
 const menuBtn = document.getElementById('menuBtn');
 const dropdownMenu = document.getElementById('dropdownMenu');
 
-// Add click listener for menu
-menuBtn.addEventListener('click', function() {
-    dropdownMenu.classList.toggle('active');
+menuBtn.addEventListener('mouseenter', function() {
+    dropdownMenu.classList.add('active');
 });
 
-// Close menu when clicking anywhere else on the page
-document.addEventListener('click', function(event) {
-    if (!menuBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('active');
-    }
+menuBtn.addEventListener('mouseleave', function() {
+    dropdownMenu.classList.remove('active');
+});
+
+dropdownMenu.addEventListener('mouseleave', function() {
+    dropdownMenu.classList.remove('active');
 });

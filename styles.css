@@ -1,12 +1,10 @@
-/* Body Styles */
+
 body {
     background-color: rgb(21,45,50);
     margin: 0;
     padding: 0;
 }
 
-/* Menu Button */
-/* TODO add javascript and make the button functional as a menu option */
 .menuBtn {
     margin-top: 15px;
     margin-left: 15px;
@@ -59,10 +57,16 @@ body {
     transform: scale(0.85);
 }
 
+.menuBtn:hover ~ .dropdown-menu,
+.dropdown-menu:hover {
+    max-height: 300px;
+    opacity: 1;
+}
+
 .dropdown-menu {
     position: absolute;
     top: 80px;
-    left: 15px;
+    left: 23px;
     background: rgb(15,69,57);
     border-radius: 5px;
     overflow: hidden;
@@ -164,7 +168,6 @@ body {
     max-width: 1000px;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: rgb(5,45,10);
     border: 10px rgb(21,45,50);
     border-radius: 20px;
 }
@@ -179,4 +182,57 @@ body {
 
 .hero-paragraphs-about p:last-child {
     border-right: none;
+}
+
+.rotated-rectangle1 {
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    background-color: rgb(15,69,57);
+    transform: rotate(30deg);
+    transform-origin: center;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    margin-top: -1000px;
+    margin-left: -500px;
+}
+.rotated-rectangle2 {
+    position: absolute;
+    width: 1600px;
+    height: 800px;
+    background-color: rgb(47,59,34);
+    transform: rotate(-40deg);
+    transform-origin: center;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    margin-top: -800px;
+    margin-left: -1500px;
+}
+.rotated-rectangle3 {
+    position: absolute;
+    width: 1600px;
+    height: 800px;
+    background-color: rgb(47,59,34);
+    transform: rotate(-40deg);
+    transform-origin: center;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    margin-top: -800px;
+    margin-left: -1500px;
+}
+.rotated-rectangle4 {
+    position: absolute;
+    width: 2500px;
+    height: 800px;
+    background-color: rgb(15,69,57);
+    transform: rotate(60deg);
+    transform-origin: center;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    margin-top: -500px;
+    margin-left: -500px;
 }
