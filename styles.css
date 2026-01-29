@@ -1,9 +1,17 @@
-h1 {
-    color:darkblue;
-    text-decoration-thickness: 10;
-}
-
-button {
-    background-color : red;
+.SUBSCRIBE-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color : rgb(210 , 0, 0);
     color: white;
+    border: none;
+    height: 38px;
+    width: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.SUBSCRIBE-button:hover {
+    background-color: rgb(190 , 0, 0);
+}
+.SUBSCRIBE-button:active {
+    background-color: rgb(230, 0, 0);
 }
