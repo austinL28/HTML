@@ -3,9 +3,10 @@
     <head>
         <title>My Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <button class="menuBtn">
+        <button class="menuBtn" id="menuBtn">
             <span class="icon">
                 <svg viewBox="0 0 175 80" width="40" height="40">
                     <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -15,5 +16,19 @@
             </span>
             <span class="text">MENU</span>
         </button>
+        <nav id="dropdownMenu" class="dropdown-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <main class="content">
+            <section class="hero">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="hero-intro">Welcome to my portfolio, this is a showcase of all my programming projects and acheivements. 
+                    Take a look around!</p>
+                
+            </section>
+        </main>
     </body>
 </html>
