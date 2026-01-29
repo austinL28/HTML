@@ -26,6 +26,16 @@ Hi! I'm Austin Ledin, a passionate web developer and designer. I love creating b
 - **Portfolio Website**: The main site, built to showcase my work and experience
 - **Other Projects**: [None yet]
 
+## 🎨 Color Palette
+
+| Color | RGB Value | Hex |
+|-------|-----------|-----|
+| Primary Background | rgb(21,45,50) | #152d32 |
+| Dark Teal | rgb(0,31,36) | #001f24 |
+| Olive Green | rgb(47,59,34) | #2f3b22 |
+| Forest Green | rgb(5,45,10) | #052d0a |
+| Accent Teal | rgb(15,69,57) | #0f4539 |
+
 ## 🔗 View My Portfolio
 
 Visit my live portfolio here: **[Your Portfolio Link](Not finished yet)**
