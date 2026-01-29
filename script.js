@@ -1,8 +1,7 @@
-// Gets elements
+
 const menuBtn = document.getElementById('menuBtn');
 const dropdownMenu = document.getElementById('dropdownMenu');
 
-// Add hover listeners for menu
 menuBtn.addEventListener('mouseenter', function() {
     dropdownMenu.classList.add('active');
 });

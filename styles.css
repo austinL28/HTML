@@ -1,12 +1,10 @@
-/* Body Styles */
+
 body {
     background-color: rgb(21,45,50);
     margin: 0;
     padding: 0;
 }
 
-/* Menu Button */
-/* TODO add javascript and make the button functional as a menu option */
 .menuBtn {
     margin-top: 15px;
     margin-left: 15px;
