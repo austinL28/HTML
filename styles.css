@@ -1,238 +1,50 @@
+:root {
+  --bg:      #f7f6f3;
+  --surface: #ffffff;
+  --border:  #e2e0db;
+  --text:    #1a1a1a;
+  --dim:     #8a8780;
+  --accent:  #c8a86b;
+  --accent-dim: rgba(200,168,107,0.15);
+  --font-d:  'Cormorant Garamond', Georgia, serif;
+  --font-b:  'Outfit', system-ui, sans-serif;
+  --rad:     10px;
+  --tr:      0.3s cubic-bezier(.4,0,.2,1);
+}
+body.dark {
+  --bg:      #111110;
+  --surface: #1a1a19;
+  --border:  #2a2a28;
+  --text:    #e8e6e0;
+  --dim:     #6e6d6a;
+  --accent-dim: rgba(200,168,107,0.12);
+}
 
+* { box-sizing:  border-box; margin: 0; padding: 0;}
+html { scroll-behavior: smooth; scroll-padding-top: 64px;}
 body {
-    background-color: rgb(21,45,50);
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-b); backgound: var(--bg); color: var(--text);
+  line-height: 1.7; -webkit-font-smoothing: antialiased;
+  transition: background-color var(--tr), color var(--tr);
 }
 
-.menuBtn {
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease-in-out;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    background: rgb(15,69,57);
-    color: #f5f5f5;
-}
+::selection { background: var(--accent); color: #111; }
+::-webkit-scrollbar { width: 5px; background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.container { max-width: 860px; margin-inline: auto; padding-inline: 28px; }
+section { padding: 90px 0; }
 
-.menuBtn:hover {
-    box-shadow: 0 0 20px 0px #2e2e2e3a;
-}
+header .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 
-.menuBtn .icon {
-    position: absolute;
-    height: 40px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    transition: all 0.5s;
+.nav-toggle {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
 }
-
-.menuBtn .text {
-    transform: translateX(55px);
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--text); border-radius: 1px; }
+nav ul { display: flex; gap: 24px; list-style: none; }
+nav a {
+  color: var(--dim); text-decoration: none; font-size: .8rem;
+  font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+  transition: color var(--tr);
 }
-
-.menuBtn:hover .icon {
-    width: 160px;
-}
-
-.menuBtn:hover .text {
-    transition: all 0.5s;
-    opacity: 0;
-}
-
-.menuBtn:focus {
-    outline: none;
-}
-
-.menuBtn:active .icon {
-    transform: scale(0.85);
-}
-
-.menuBtn:hover ~ .dropdown-menu,
-.dropdown-menu:hover {
-    max-height: 300px;
-    opacity: 1;
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 80px;
-    left: 23px;
-    background: rgb(15,69,57);
-    border-radius: 5px;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.dropdown-menu.active {
-    max-height: 300px;
-    opacity: 1;
-}
-
-.dropdown-menu a {
-    display: block;
-    color: #f5f5f5;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    transition: background 0.2s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Remove border from last link */
-.dropdown-menu a:last-child {
-    border-bottom: none;
-}
-
-/* Hover effect on links */
-.dropdown-menu a:hover {
-    background: rgb(20, 85, 70);
-    padding-left: 25px;
-}
-
-/* Content Area */
-.content {
-    margin-top: 50px;
-    padding: 20px;
-    color: #f5f5f5;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #f5f5f5;
-}
-
-.hero p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    color: #b0b0b0;
-}
-
-.hero-intro {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-paragraphs-home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    background-color: rgb(5,45,10);
-    border: 10px rgb(21,45,50);
-    border-radius: 10px;
-}
-
-.hero-paragraphs-home p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: #b0b0b0;
-    line-height: 1.6;
-    text-align: left;
-    background-color: rgb(5,45,10);
-    border: 0px rgb(21,45,50);
-    border-radius: 10px;
-}
-
-.hero-paragraphs-about {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 10px 20px;
-    border: 10px rgb(21,45,50);
-    border-radius: 20px;
-}
-
-.hero-paragraphs-about p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: #b0b0b0;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.hero-paragraphs-about p:last-child {
-    border-right: none;
-}
-
-.rotated-rectangle1 {
-    position: absolute;
-    width: 2000px;
-    height: 1000px;
-    background-color: rgb(15,69,57);
-    transform: rotate(30deg);
-    transform-origin: center;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    margin-top: -1000px;
-    margin-left: -500px;
-}
-.rotated-rectangle2 {
-    position: absolute;
-    width: 1600px;
-    height: 800px;
-    background-color: rgb(47,59,34);
-    transform: rotate(-40deg);
-    transform-origin: center;
-    z-index: -2;
-    top: 50%;
-    left: 50%;
-    margin-top: -800px;
-    margin-left: -1500px;
-}
-.rotated-rectangle3 {
-    position: absolute;
-    width: 1600px;
-    height: 800px;
-    background-color: rgb(47,59,34);
-    transform: rotate(-40deg);
-    transform-origin: center;
-    z-index: -2;
-    top: 50%;
-    left: 50%;
-    margin-top: -800px;
-    margin-left: -1500px;
-}
-.rotated-rectangle4 {
-    position: absolute;
-    width: 2500px;
-    height: 800px;
-    background-color: rgb(15,69,57);
-    transform: rotate(60deg);
-    transform-origin: center;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    margin-top: -500px;
-    margin-left: -500px;
-}
+nav a:hover { color: var(--accent); }
